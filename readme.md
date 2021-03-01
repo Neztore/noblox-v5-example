@@ -65,3 +65,6 @@ The idea of having all http fetching on the Client class comes from the `Eris` d
 different in that it mainly deals with an API that sends Instances via. websocket, instead of retrieving them - and they
 have a consistent API to work with, so in most places a lot of the http code can be reduced with boilerplate.
 We do not have that luxury, and across different endpoints the response shape changes a lot.
+
+Supporting backwards compatibility is likely to not be 100% possible, slow development massively - and heavily restrict
+us in the future if we want to keep it.
